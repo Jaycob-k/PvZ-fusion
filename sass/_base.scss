@@ -1,0 +1,10 @@
+$fontfamily: Open Sans, Arial, Helvetica, sans-serif;
+$bkg_primary-color: #0363f0;
+
+@mixin breakepoint-1 {
+    @media screen and (max-width: 640px) { @content};
+}
+
+@mixin breakepoint-2 {
+    @media screen and (max-width: 390px) { @content};
+}

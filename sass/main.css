@@ -1,0 +1,138 @@
+body {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+body img {
+  width: 100%;
+}
+body h1 {
+  text-align: center;
+}
+
+header .header__nav {
+  background-color: #0363f0 !important;
+}
+header .header__nav .navbar-brand {
+  width: 52px;
+}
+
+main {
+  margin: 3rem auto;
+  width: 56%;
+}
+@media screen and (max-width: 640px) {
+  main {
+    width: 77%;
+  }
+}
+main .accordion p {
+  margin: 0;
+}
+main .accordion .accordion-button:not(.collapsed) {
+  color: #333333;
+  font-weight: 700;
+  background-color: #FFE0B2;
+}
+main .accordion .accordion-body {
+  background-color: #cffeff;
+}
+main .plants__carousel {
+  width: 100%;
+  margin: 4rem auto;
+  text-align: center;
+}
+main .plants__carousel .carousel {
+  width: 45%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 640px) {
+  main .plants__carousel .carousel {
+    width: 161px;
+  }
+}
+main .zombies__carousel {
+  width: 100%;
+  margin: 4rem auto;
+  text-align: center;
+}
+main .zombies__carousel .carousel {
+  width: 45%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 640px) {
+  main .zombies__carousel .carousel {
+    width: 161px;
+  }
+}
+main article:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 20px;
+}
+main article:last-child .zombie {
+  width: 18rem;
+}
+@media screen and (max-width: 640px) {
+  main article:last-child .zombie {
+    width: 80%;
+  }
+}
+
+.table__section {
+  overflow-x: scroll;
+}
+
+.plant-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.plant-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.plant-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.plant-table .plant__icon {
+  text-align: center;
+}
+.plant-table .plant__icon img {
+  width: 80px;
+}
+.plant-table .plant__formula img {
+  width: 150px;
+}
+.plant-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.plant-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+footer section:first-child p {
+  margin-bottom: 0;
+}
+footer nav {
+  justify-content: flex-end;
+}
+@media screen and (max-width: 390px) {
+  footer nav {
+    flex-direction: column;
+  }
+  footer nav .nav-link {
+    padding: 3px;
+  }
+}/*# sourceMappingURL=main.css.map */

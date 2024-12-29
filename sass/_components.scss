@@ -1,0 +1,30 @@
+@mixin accordion-styles {
+    p {
+        margin: 0;
+    }
+
+    .accordion-button {
+
+        &:not(.collapsed) {
+            color: #333333;
+            font-weight: 700;
+            background-color: #FFE0B2;
+        }
+    }
+
+    .accordion-body {
+        background-color: #cffeff;
+    }
+}
+
+@mixin carrousel-styles {
+    width: 100%;
+    margin: 4rem auto;
+    text-align: center;
+
+    .carousel {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+

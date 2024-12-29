@@ -1,0 +1,141 @@
+body {
+    font-family: $fontfamily;
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+header {
+
+    .header__nav {
+        background-color: $bkg_primary-color !important;
+
+        .navbar-brand {
+            width: 52px;
+        }
+    }
+    
+}
+
+main {
+    margin: 3rem auto;
+    width: 56%;
+
+    @include breakepoint-1 {
+        width: 77%;
+    }
+
+    //acordeon
+    .accordion {
+        @include accordion-styles;
+    }
+
+    //carruseles
+    .plants__carousel {
+       @include carrousel-styles;
+       @include breakepoint-1 {
+        .carousel {
+            width: 161px;
+        }
+       }
+    }
+
+    .zombies__carousel {
+        @include carrousel-styles;
+        @include breakepoint-1 {
+            .carousel {
+                width: 161px;
+            }
+        }
+    }
+
+    // cartas de zombies
+    & article:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem auto;
+        gap: 20px;
+
+        .zombie {
+            width: 18rem;
+
+            @include breakepoint-1 {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.table__section {
+    overflow-x: scroll;
+}
+
+// tabla de fusiones clase S
+.plant-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+    th {
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: left;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .plant__icon {
+        text-align: center;
+    }
+
+    .plant__icon img {
+        width: 80px;
+    }
+
+    .plant__formula img {
+        width: 150px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    & section:first-child p {
+        margin-bottom: 0;
+    }
+
+    nav {
+        justify-content: flex-end;
+
+        @include breakepoint-2 {
+            flex-direction: column;
+
+            .nav-link {
+                padding: 3px;
+            }
+        }
+    }
+}
